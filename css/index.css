@@ -7,8 +7,62 @@
     background-color: white;
 }
 
-.index-section, index-section {
+.blackbg {
+    background-color: #242323;
+}
+
+.index-section {
     height: 100vh;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: cursive;
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+
+.section-2-title {
+    color: white;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+.index-section-2 {
+    background-color: #242323;
+}
+
+.img-section {
+    width: 50%;
+}
+
+.btn-custom {
+    width: 10vw;
+    height: 3vw;
+    font-size: 1vw;
+    font-weight: 500;
+    border-radius: 0px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.btn-custom:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.service-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.service-description {
+    margin-bottom: 15px;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
 }
 
 .index-bg{
