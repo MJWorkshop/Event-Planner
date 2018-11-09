@@ -1,0 +1,74 @@
+.full-width {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.whitebg {
+    background-color: white;
+}
+
+.index-section, index-section {
+    height: 100vh;
+}
+
+.index-bg{
+	background-image:url(../images/niche-wedding.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+	color: white;
+    width: 100%;
+	height: 100%;
+}
+
+.index-container {
+    line-height: 6vw;
+}
+
+.index-title {
+    font-stretch: condensed;
+    color: white;
+    font-size: 10vw;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 10%;
+}
+
+.index-subtitle {
+    color: #F1F1F1;
+    font-size: 3.5vw;
+    font-stretch: expanded;
+    word-spacing: 5px;
+    text-shadow: 1px 1px 1px #444444;
+    font-weight: 500;
+}
+
+.fancy {
+    text-align: center;
+}
+
+.fancy span {
+    display: inline-block;
+    position: relative;  
+}
+
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    border-top: 0.3vw solid white;
+    top: 3vw;
+    width: 30px;
+}
+
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
