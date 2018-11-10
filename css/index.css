@@ -32,6 +32,10 @@
     background-color: #242323;
 }
 
+.index-section-3 {
+    background-color: #696969;
+}
+
 .img-section {
     width: 50%;
 }
@@ -63,6 +67,12 @@
     margin-bottom: 15px;
     padding-left: 3.5vw;
     padding-right: 3.5vw;
+    min-height: 60px;
+    max-height: 100px;
+}
+
+.noresize {
+    resize: none;
 }
 
 .index-bg{
