@@ -1,3 +1,9 @@
+.img-follow-parent {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 .full-width {
     padding-left: 0px;
     padding-right: 0px;
@@ -23,7 +29,7 @@
     font-weight: 600;
 }
 
-.section-2-title {
+.section-2-title, .section-3-title {
     color: white;
     text-shadow: 1px 1px 1px #ffffff;
 }
@@ -33,7 +39,24 @@
 }
 
 .index-section-3 {
-    background-color: #696969;
+    background-color: #F8F8FF;
+    background-color: #242323;
+}
+
+.index-section-3 input, .index-section-3 textarea {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+}
+
+.index-section-3 input::placeholder, .index-section-3 textarea::placeholder {
+    color: gainsboro;
+    font-weight: normal;
+}
+
+.index-section-3 label {
+    color: white;
+    font-weight: 500;
 }
 
 .img-section {
@@ -94,7 +117,6 @@
     font-stretch: condensed;
     color: white;
     font-size: 10vw;
-    font-style: italic;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
     margin-top: 10%;
@@ -104,6 +126,7 @@
     color: #F1F1F1;
     font-size: 3.5vw;
     font-stretch: expanded;
+    font-style: italic;
     word-spacing: 5px;
     text-shadow: 1px 1px 1px #444444;
     font-weight: 500;
