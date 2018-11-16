@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Event</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/datepickk.min.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-group">
+                                    <label for="eventName">Event Name</label>
+                                    <input type="text" class="form-control" id="eventName" placeholder="Enter Event Name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventDescription">Short Description</label>
+                                    <textarea class="form-control" id="eventDescription"></textarea>
+                                    <h6 class="text-right count_text"></h6>
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventVenue">Event Venue</label>
+                                    <input type="text" class="form-control" id="eventVenue" placeholder="Enter a place">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/datepickk.min.js"></script>
+        <script type="text/javascript">
+            var now = new Date();
+            var datepicker = new Datepickk({
+                container: document.querySelector('.datepicker'),
+				inline:true,
+				range: true,
+				/*tooltips: {
+				    date: new Date(),
+				    text: 'Tooltip'
+				},*/
+                minDate: new Date(now.getFullYear(), now.getMonth(), now.getDate())//,
+				/*highlight:{
+				    start: new Date(now.getFullYear(),now.getMonth(),3),
+				    end: new Date(now.getFullYear(),now.getMonth(),6),
+				    backgroundColor:'#05676E',
+				    color:'#fff',
+				    legend: 'Highlight'
+				}*/
+            });
+            
+            $(document).ready(function() {
+                var text_max = 200;
+                $('.count_text').html(text_max + ' remaining');
+                $('#eventDescription').keyup(function() {
+                    var text_length = $(this).val().length;
+                    var text_remaining = (text_max - text_length);
+                    $('.count_text').html(text_remaining + ' remaining');
+                });
+            });
+            
+        </script>
+    </body>
+</html>
