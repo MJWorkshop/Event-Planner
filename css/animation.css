@@ -1,0 +1,26 @@
+.btn-go-back:hover > i {
+    animation: gobackAnimation 0.3s;
+}
+
+.btnDelEvent:hover > i {
+    animation: recoverAnimation 0.3s;
+}
+
+@keyframes gobackAnimation {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0);
+    }
+    50% {
+        transform: translate(-5px, 0) rotate(0);
+    }
+}
+        
+@keyframes recoverAnimation {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(180deg);
+    }
+}

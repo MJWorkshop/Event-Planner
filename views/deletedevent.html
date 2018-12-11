@@ -1,20 +1,17 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title>Deleted Event</title>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="../css/csshake.min.css" />
         <link rel="stylesheet" type="text/css" href="../css/sweetalert.css" />
         <link rel="stylesheet" type="text/css" href="../css/burger.css" />
+        <link rel="stylesheet" type="text/css" href="../css/animation.css" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
     </head>
     
     <style>
-        /* === card component ====== 
- * Variation of the panel component
- * version 2018.10.30
- * https://codepen.io/jstneg/pen/EVKYZj
- */
 .card{ background-color: #fff; border: 1px solid transparent; border-radius: 6px; }
 .card > .card-link{ color: #333; }
 .card > .card-link:hover{  text-decoration: none; }
@@ -113,7 +110,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-10">
-                    <h2><span>Event Board</span></h2>
+                    <h2><span>Deleted Event Board</span></h2>
                 </div>
                 <div class="col-md-2">
                     <div class="row">
@@ -174,12 +171,16 @@
             
             <div class="row">
                 <div class="col-md-12">
+                    <button class="btn btn-primary btn-go-back" onClick="window.location.href='home.html';">
+                        <i class="glyphicon glyphicon-chevron-left"></i> Back
+                    </button>
+                    
                     <button class="btn btn-success shake-chunk shake-constant shake-constant--hover" onClick="window.location.href='newevent.html';">
                         <i class="glyphicon glyphicon-plus"></i> New Event
                     </button>
 
-                    <button class="btn btn-danger" onClick="window.location.href='deletedevent.html';">
-                        <i class="glyphicon glyphicon-trash"></i> Deleted Event
+                    <button class="btn btn-danger">
+                        <i class="glyphicon glyphicon-trash"></i> Clear Trash
                     </button>
                 </div>
             </div>
@@ -195,7 +196,7 @@
             
             <div class="row">
                 <div class="col-md-3">
-                    <div class="card card-default" onClick="window.location.href='event.html';">
+                    <div class="card card-default">
                         <a href="#" class="card-link">
                             <span class="card-img">
                                 <img src="../images/event.jpg" class="img-responsive" />
@@ -203,14 +204,14 @@
                             <span class="card-body">
                                 <span class="h3 heading">Hanna's Party</span>
                                 <p>A stitch in time saves nine. All good things come to those who wait.  Too  many cooks spoil the broth.</p>
-                                <button class="btn btn-danger btnDelEvent"><i class="glyphicon glyphicon-trash"></i></button>
+                                <button class="btn btn-primary btnDelEvent"><i class="glyphicon glyphicon-refresh"></i></button>
                             </span>
                         </a>
                     </div>
                 </div>
                 
                 <div class="col-md-3">
-                    <div class="card card-default" onClick="window.location.href='event.html';">
+                    <div class="card card-default">
                         <a href="#" class="card-link">
                             <span class="card-img">
                                 <img src="../images/event.jpg" class="img-responsive" />
@@ -218,14 +219,14 @@
                             <span class="card-body">
                                 <span class="h3 heading">Hanna's Party</span>
                                 <p>A stitch in time saves nine. All good things come to those who wait.  Too  many cooks spoil the broth.</p>
-                                <button class="btn btn-danger shake btnDelEvent"><i class="glyphicon glyphicon-trash"></i></button>
+                                <button class="btn btn-primary btnDelEvent"><i class="glyphicon glyphicon-refresh"></i></button>
                             </span>
                         </a>
                     </div>
                 </div>
                 
                 <div class="col-md-3">
-                    <div class="card card-default" onClick="window.location.href='event.html';">
+                    <div class="card card-default">
                         <a href="#" class="card-link">
                             <span class="card-img">
                                 <img src="../images/event.jpg" class="img-responsive" />
@@ -233,14 +234,14 @@
                             <span class="card-body">
                                 <span class="h3 heading">Hanna's Party</span>
                                 <p>A stitch in time saves nine. All good things come to those who wait.  Too  many cooks spoil the broth.</p>
-                                <button class="btn btn-danger shake btnDelEvent"><i class="glyphicon glyphicon-trash"></i></button>
+                                <button class="btn btn-primary btnDelEvent"><i class="glyphicon glyphicon-refresh"></i></button>
                             </span>
                         </a>
                     </div>
                 </div>
                 
                 <div class="col-md-3">
-                    <div class="card card-default" onClick="window.location.href='event.html';">
+                    <div class="card card-default">
                         <a href="#" class="card-link">
                             <span class="card-img">
                                 <img src="../images/event.jpg" class="img-responsive" />
@@ -248,14 +249,14 @@
                             <span class="card-body">
                                 <span class="h3 heading">Hanna's Party</span>
                                 <p>A stitch in time saves nine. All good things come to those who wait.  Too  many cooks spoil the broth.</p>
-                                <button class="btn btn-danger shake btnDelEvent"><i class="glyphicon glyphicon-trash"></i></button>
+                                <button class="btn btn-primary btnDelEvent"><i class="glyphicon glyphicon-refresh"></i></button>
                             </span>
                         </a>
                     </div>
                 </div>
                 
                 <div class="col-md-3">
-                    <div class="card card-default" onClick="window.location.href='event.html';">
+                    <div class="card card-default">
                         <a href="#" class="card-link">
                             <span class="card-img">
                                 <img src="../images/event.jpg" class="img-responsive" />
@@ -263,14 +264,14 @@
                             <span class="card-body">
                                 <span class="h3 heading">Hanna's Party</span>
                                 <p>A stitch in time saves nine. All good things come to those who wait.  Too  many cooks spoil the broth.</p>
-                                <button class="btn btn-danger shake btnDelEvent"><i class="glyphicon glyphicon-trash"></i></button>
+                                <button class="btn btn-primary btnDelEvent"><i class="glyphicon glyphicon-refresh"></i></button>
                             </span>
                         </a>
                     </div>
                 </div>
                 
                 <div class="col-md-3">
-                    <div class="card card-default" onClick="window.location.href='event.html';">
+                    <div class="card card-default">
                         <a href="#" class="card-link">
                             <span class="card-img">
                                 <img src="../images/event.jpg" class="img-responsive" />
@@ -278,7 +279,7 @@
                             <span class="card-body">
                                 <span class="h3 heading">Hanna's Party</span>
                                 <p>A stitch in time saves nine. All good things come to those who wait.  Too  many cooks spoil the broth.</p>
-                                <button class="btn btn-danger shake btnDelEvent"><i class="glyphicon glyphicon-trash"></i></button>
+                                <button class="btn btn-primary btnDelEvent"><i class="glyphicon glyphicon-refresh"></i></button>
                             </span>
                         </a>
                     </div>
